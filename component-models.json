@@ -5022,21 +5022,21 @@
     ]
   },
   {
-    "id": "quote",
+    "id": "nav",
     "fields": [
       {
-        "component": "richtext",
-        "name": "quote",
-        "value": "",
-        "label": "Quote",
-        "valueType": "string"
+        "component": "reference",
+        "valueType": "string",
+        "name": "logo",
+        "label": "Logo",
+        "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "author",
-        "label": "Author",
-        "value": ""
+        "name": "name",
+        "label": "Company name",
+        "required": true
       }
     ]
   }
