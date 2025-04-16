@@ -1,5 +1,5 @@
 export default function decorate(block) {
-    const nav = document.createElement('nav')
+  const nav = document.createElement('nav');
 
-    block.appendChild(nav)
+  block.appendChild(nav);
 }
