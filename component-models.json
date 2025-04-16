@@ -5022,7 +5022,7 @@
     ]
   },
   {
-    "id": "nav",
+    "id": "navigation",
     "fields": [
       {
         "component": "reference",
