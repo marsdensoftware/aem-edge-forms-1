@@ -3,7 +3,7 @@
   Prior to that if css is nested will break and not showing the proper styling
 */
 
-.msd.block {
+.block.msd {
   display: flex;
   flex-wrap: wrap;
 }
