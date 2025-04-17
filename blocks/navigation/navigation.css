@@ -1,3 +1,9 @@
-.nav {
-  display: block;
+/*
+  Nesting CSS only supported starting Dec 2023
+  Prior to that if css is nested will break and not showing the proper styling
+*/
+
+.msd.block {
+  display: flex;
+  flex-wrap: wrap;
 }
