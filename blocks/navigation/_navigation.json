@@ -23,14 +23,21 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "logo",
+          "name": "image",
           "label": "Logo",
           "multi": false
         },
         {
           "component": "text",
           "valueType": "string",
-          "name": "name",
+          "name": "imageAlt",
+          "label": "Logo alt text",
+          "required": true
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "navigationText_title",
           "label": "Company name",
           "required": true
         }
