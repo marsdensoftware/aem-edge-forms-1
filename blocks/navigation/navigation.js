@@ -1,5 +1,7 @@
 export default function decorate(block) {
-  const nav = document.createElement('nav');
+  const [navigationWrapper] = block.children;
 
-  block.appendChild(nav);
+  const nav = document.createElement('nav');
+  nav.textContent = navigationWrapper.textContent.trim();
+  navigationWrapper.replaceChildren(nav);
 }
