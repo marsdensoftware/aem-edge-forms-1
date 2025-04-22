@@ -3,8 +3,71 @@
   Prior to that if css is nested will break and not showing the proper styling
 */
 
-.block.navigation {
+:root {
+  --userSize: 80px;
+  --indicatorSize: 10px;
+}
+
+.block.userindicator {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.block.userindicator .userIndicator__img {
+  order: 1;
+  position: relative;
+}
+
+.block.userindicator .userIndicator__picture {
+  display: block;
+  cursor: pointer;
+  border: 1px solid #00000014;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.block.userindicator .userIndicator__indicator-inner {
+  background-color: #fff;
+  bottom: 5px;
+  left: 10px;
+  position: absolute;
+  border-radius: 50%;
+  width: var(--indicatorSize);
+  height: var(--indicatorSize);
+  padding: 3px;
+}
+
+.block.userindicator .userIndicator__indicator {
+  display: block;
+  background-color: #17b26a;
+  border-radius: 50%;
+  position: relative;
+  width: var(--indicatorSize);
+  height: var(--indicatorSize);
+}
+
+.block.userindicator .userIndicator__picture picture {
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  width: var(--userSize);
+  height: var(--userSize);
+}
+
+.block.userindicator .userIndicator__name {
+  order: 0;
+  margin-right: 9px;
+  display: none;
+}
+
+.block.userindicator .userIndicator__name p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .block.userindicator .userIndicator__name {
+    display: block;
+  }
 }
