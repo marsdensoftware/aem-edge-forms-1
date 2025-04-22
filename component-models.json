@@ -5022,7 +5022,7 @@
     ]
   },
   {
-    "id": "navigation",
+    "id": "userIndicator",
     "fields": [
       {
         "component": "reference",
@@ -5041,8 +5041,8 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "navigationText_title",
-        "label": "Company name",
+        "name": "userIndicatorText_title",
+        "label": "User name",
         "required": true
       }
     ]
