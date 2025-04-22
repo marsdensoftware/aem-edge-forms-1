@@ -44,10 +44,5 @@
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "section",
-      "components": ["text", "image", "button", "title", "userIndicator"]
-    }
-  ]
+  "filters": []
 }
