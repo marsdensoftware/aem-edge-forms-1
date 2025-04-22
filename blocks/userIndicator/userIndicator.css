@@ -8,19 +8,19 @@
   --indicator-size: 10px;
 }
 
-.block.user-indicator {
+.block.userindicator {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 }
 
-.block.user-indicator .user-indicator-img {
+.block.userindicator .user-indicator-img {
   order: 1;
   position: relative;
 }
 
-.block.user-indicator .user-indicator-picture {
+.block.userindicator .user-indicator-picture {
   display: block;
   cursor: pointer;
   border: 1px solid #00000014;
@@ -28,7 +28,7 @@
   border-radius: 50%;
 }
 
-.block.user-indicator .user-indicator-indicator-inner {
+.block.userindicator .user-indicator-indicator-inner {
   background-color: #fff;
   bottom: 5px;
   left: 10px;
@@ -39,7 +39,7 @@
   padding: 3px;
 }
 
-.block.user-indicator .user-indicator-indicator {
+.block.userindicator .user-indicator-indicator {
   display: block;
   background-color: #17b26a;
   border-radius: 50%;
@@ -48,26 +48,26 @@
   height: var(--indicator-size);
 }
 
-.block.user-indicator .user-indicator-picture picture {
+.block.userindicator .user-indicator-picture picture {
   border-radius: 50%;
   overflow: hidden;
   display: block;
   width: var(--user-size);
-  height: var(--suser-size);
+  height: var(--user-size);
 }
 
-.block.user-indicator .user-indicator-name {
+.block.userindicator .user-indicator-name {
   order: 0;
   margin-right: 9px;
   display: none;
 }
 
-.block.user-indicator .user-indicator-name p {
+.block.userindicator .user-indicator-name p {
   margin: 0;
 }
 
 @media (width >= 768px) {
-  .block.user-indicator .user-indicator-name {
+  .block.userindicator .user-indicator-name {
     display: block;
   }
 }
