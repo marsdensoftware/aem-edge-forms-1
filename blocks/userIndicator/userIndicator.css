@@ -4,23 +4,23 @@
 */
 
 :root {
-  --userSize: 80px;
-  --indicatorSize: 10px;
+  --user-size: 80px;
+  --indicator-size: 10px;
 }
 
-.block.userindicator {
+.block.user-indicator {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
 }
 
-.block.userindicator .userIndicator__img {
+.block.user-indicator .user-indicator-img {
   order: 1;
   position: relative;
 }
 
-.block.userindicator .userIndicator__picture {
+.block.user-indicator .user-indicator-picture {
   display: block;
   cursor: pointer;
   border: 1px solid #00000014;
@@ -28,46 +28,46 @@
   border-radius: 50%;
 }
 
-.block.userindicator .userIndicator__indicator-inner {
+.block.user-indicator .user-indicator-indicator-inner {
   background-color: #fff;
   bottom: 5px;
   left: 10px;
   position: absolute;
   border-radius: 50%;
-  width: var(--indicatorSize);
-  height: var(--indicatorSize);
+  width: var(--indicator-size);
+  height: var(--indicator-size);
   padding: 3px;
 }
 
-.block.userindicator .userIndicator__indicator {
+.block.user-indicator .user-indicator-indicator {
   display: block;
   background-color: #17b26a;
   border-radius: 50%;
   position: relative;
-  width: var(--indicatorSize);
-  height: var(--indicatorSize);
+  width: var(--indicator-size);
+  height: var(--indicator-size);
 }
 
-.block.userindicator .userIndicator__picture picture {
+.block.user-indicator .user-indicator-picture picture {
   border-radius: 50%;
   overflow: hidden;
   display: block;
-  width: var(--userSize);
-  height: var(--userSize);
+  width: var(--user-size);
+  height: var(--suser-size);
 }
 
-.block.userindicator .userIndicator__name {
+.block.user-indicator .user-indicator-name {
   order: 0;
   margin-right: 9px;
   display: none;
 }
 
-.block.userindicator .userIndicator__name p {
+.block.user-indicator .user-indicator-name p {
   margin: 0;
 }
 
-@media (min-width: 768px) {
-  .block.userindicator .userIndicator__name {
+@media (width >= 768px) {
+  .block.user-indicator .user-indicator-name {
     display: block;
   }
 }
