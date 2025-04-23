@@ -1,11 +1,14 @@
-/*
-  Nesting CSS only supported starting Dec 2023
-  Prior to that if css is nested will break and not showing the proper styling
-*/
-
 :root {
-  --user-size: 80px;
-  --indicator-size: 10px;
+  --user-size: 5rem;
+  --indicator-size: 0.625rem;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
 }
 
 .block.userindicator {
@@ -14,31 +17,27 @@
   align-items: center;
   justify-content: flex-end;
 }
-
 .block.userindicator .user-indicator-img {
   order: 1;
   position: relative;
 }
-
 .block.userindicator .user-indicator-picture {
   display: block;
   cursor: pointer;
-  border: 1px solid #00000014;
-  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.0784313725);
+  padding: 0.3125rem;
   border-radius: 50%;
 }
-
 .block.userindicator .user-indicator-indicator-inner {
   background-color: #fff;
-  bottom: 5px;
-  left: 10px;
+  bottom: 0.3125rem;
+  left: 0.625rem;
   position: absolute;
   border-radius: 50%;
   width: var(--indicator-size);
   height: var(--indicator-size);
-  padding: 3px;
+  padding: 0.1875rem;
 }
-
 .block.userindicator .user-indicator-indicator {
   display: block;
   background-color: #17b26a;
@@ -47,7 +46,6 @@
   width: var(--indicator-size);
   height: var(--indicator-size);
 }
-
 .block.userindicator .user-indicator-picture picture {
   border-radius: 50%;
   overflow: hidden;
@@ -55,19 +53,18 @@
   width: var(--user-size);
   height: var(--user-size);
 }
-
 .block.userindicator .user-indicator-name {
   order: 0;
-  margin-right: 9px;
+  margin-right: 0.5625rem;
   display: none;
 }
-
 .block.userindicator .user-indicator-name p {
   margin: 0;
 }
-
 @media (width >= 768px) {
   .block.userindicator .user-indicator-name {
     display: block;
   }
 }
+
+/*# sourceMappingURL=userIndicator.css.map */
