@@ -44,5 +44,10 @@
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "userIndicator",
+      "components": ["text", "image", "button", "title"]
+    }
+  ]
 }

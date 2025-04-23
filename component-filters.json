@@ -70,5 +70,14 @@
       "tnc",
       "wizard"
     ]
+  },
+  {
+    "id": "userIndicator",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
   }
 ]

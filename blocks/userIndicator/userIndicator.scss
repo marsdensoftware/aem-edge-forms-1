@@ -4,10 +4,6 @@
   --indicator-size: 10px;
 }
 
-::placeholder {
-  color: gray;
-}
-
 .block {
   &.userindicator {
     display: flex;
@@ -48,12 +44,14 @@
       height: var(--indicator-size);
     }
 
-    .user-indicator-picture picture {
-      border-radius: 50%;
-      overflow: hidden;
-      display: block;
-      width: var(--user-size);
-      height: var(--user-size);
+    .user-indicator-picture {
+      picture {
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        width: var(--user-size);
+        height: var(--user-size);
+      }
     }
 
     .user-indicator-name {
@@ -67,6 +65,12 @@
 
       @media (width >= 768px) {
         display: block;
+      }
+    }
+
+    &.userindicator--is-not-loggedin {
+      .user-indicator-img {
+        display: none;
       }
     }
   }
