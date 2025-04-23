@@ -73,11 +73,6 @@
   },
   {
     "id": "userIndicator",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title"
-    ]
+    "components": null
   }
 ]

@@ -69,8 +69,33 @@
     }
 
     &.userindicator--is-not-loggedin {
+      margin-top: 60px;
+
       .user-indicator-img {
         display: none;
+      }
+
+      .user-indicator-name {
+        display: block;
+        background-color: #017ac9;
+        color: #fff;
+        padding: 16px 32px;
+        border-radius: 999px;
+        cursor: pointer;
+        /* Elevation-2 */
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          transition: all 0.5 ease-in-out;
+          background: linear-gradient(135deg, #017ac9 25%, #134276 100%);
+          /* Elevation-3 */
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        &:active {
+          transition: all 0.5 ease-in-out;
+          background: #134276;
+        }
       }
     }
   }
