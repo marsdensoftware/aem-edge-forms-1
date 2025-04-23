@@ -1,8 +1,6 @@
 # AEM EDGE DELIVERY SERVICES
 
-URL for testing:
-
-- https://main--aem-edge-forms-1--marsdensoftware.aem.page/content/edge-forms-1/
+https://main--aem-edge-forms-1--marsdensoftware.aem.page/content/edge-forms-1/
 
 ## Environments
 
