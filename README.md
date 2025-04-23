@@ -2,6 +2,10 @@
 
 https://main--aem-edge-forms-1--marsdensoftware.aem.page/content/edge-forms-1/
 
+URL for testing:
+
+- https://dev--aem-edge-forms-1--marsdensoftware.aem.page/
+
 ## Environments
 
 - Preview: https://main--aem-boilerplate-forms--adobe-rnd.aem.page/
