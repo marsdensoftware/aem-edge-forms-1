@@ -20,7 +20,7 @@
     "update:formatters": "rollup -c rollup/af-formatters.rollup.config.js",
     "update:functions": "cp node_modules/@aemforms/af-custom-functions/src/index.js blocks/form/rules/functions.js",
     "update": "npm run update:core && npm run update:formula && npm run update:formatters",
-    "watch:postcss": "postcss blocks/**/*.css --replace",
+    "build:postcss": "postcss blocks/**/*.css --replace",
     "watch:scss": "sass --watch blocks",
     "watch:ts": "tsc --watch",
     "dev": "concurrently --kill-others \"aem up\" \"npm run watch:ts\" \"npm run watch:scss\""
