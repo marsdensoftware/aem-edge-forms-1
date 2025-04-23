@@ -2,8 +2,7 @@
 
 ## Environments
 
-- Preview: https://main--aem-boilerplate-forms--adobe-rnd.aem.page/
-- Live: https://main--aem-edge-forms-1--marsdensoftware.aem.page/content/edge-forms-1/
+- Live: https://main--aem-edge-forms-1--marsdensoftware.aem.page/
 - Testing: https://dev--aem-edge-forms-1--marsdensoftware.aem.page/
 
 ## Prerequisites
