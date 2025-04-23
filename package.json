@@ -49,6 +49,7 @@
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
+    "@adobe/aem-cli": "^16.10.19",
     "@adobe/json-formula": "0.1.50",
     "@aemforms/af-core": "0.22.121",
     "@aemforms/af-custom-functions": "1.0.14",
