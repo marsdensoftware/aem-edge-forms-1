@@ -30,7 +30,8 @@ npm run lint
 
 ## Local development
 
-Only use `.ts` and `.scss` file for development, `.js` and `.css` are compiled file.
+[Gulp](https://gulpjs.com/) is use to compile `.scss` to `.css`, through various postcss plugins to support older browser and automate conversion of px value to rem. Tsx is use to compile `.ts` to `.js`.
+Only make changes in `.ts` and `.scss` files for development.
 
 1. Add a mountpoint in the `fstab.yaml`
 2. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
