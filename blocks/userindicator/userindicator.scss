@@ -8,8 +8,14 @@
   &.userindicator {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    justify-content: flex-end;
+
+    .user-indicator--container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
     .user-indicator-img {
       order: 1;
@@ -76,7 +82,6 @@
       }
 
       .user-indicator-name {
-        display: block;
         background-color: #017ac9;
         color: #fff;
         padding: 16px 32px;
@@ -96,6 +101,19 @@
           transition: all 0.5 ease-in-out;
           background: #134276;
         }
+      }
+    }
+
+    .nav {
+      width: 300px;
+
+      ul {
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
       }
     }
   }

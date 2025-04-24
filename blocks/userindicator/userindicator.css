@@ -6,8 +6,13 @@
 .block.userindicator {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+}
+.block.userindicator .user-indicator--container {
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 .block.userindicator .user-indicator-img {
   order: 1;
@@ -65,7 +70,6 @@
   display: none;
 }
 .block.userindicator.userindicator--is-not-loggedin .user-indicator-name {
-  display: block;
   background-color: #017ac9;
   color: #fff;
   padding: 1rem 2rem;
@@ -80,7 +84,21 @@
   /* Elevation-3 */
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
-.block.userindicator.userindicator--is-not-loggedin .user-indicator-name:active {
+.block.userindicator.userindicator--is-not-loggedin
+  .user-indicator-name:active {
   transition: all 0.5 ease-in-out;
   background: #134276;
 }
+.block.userindicator .nav {
+  width: 18.75rem;
+}
+.block.userindicator .nav ul {
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+/*# sourceMappingURL=userIndicator.css.map */
