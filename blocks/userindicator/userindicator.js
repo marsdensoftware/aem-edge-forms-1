@@ -15,7 +15,6 @@ function decorate(block) {
     const el = document.querySelectorAll('.userindicator');
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
-    // Nav links
     [1, 2, 3, 4].forEach((item, idx) => {
         const li = document.createElement('li');
         const anchor = document.createElement('a');
