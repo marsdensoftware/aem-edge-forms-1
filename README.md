@@ -30,6 +30,8 @@ npm run lint
 
 ## Local development
 
+Only use `.ts` and `.scss` file for development, `.js` and `.css` are compiled file.
+
 1. Add a mountpoint in the `fstab.yaml`
 2. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
 3. Open the `{repo}` directory in your favorite IDE and start coding
