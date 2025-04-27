@@ -14,11 +14,17 @@ function decorate(block) {
     // Add child element into container
     const el = document.querySelectorAll('.userindicator');
     const nav = document.createElement('nav');
+    // Nav links
     const ul = document.createElement('ul');
-    [1, 2, 3, 4].forEach((item, idx) => {
+    ['/', 'about', 'contact', 'profile'].forEach((url, idx) => {
         const li = document.createElement('li');
         const anchor = document.createElement('a');
-        anchor.href = '/';
+        if (idx === 0) {
+            anchor.href = `/`;
+        }
+        else {
+            anchor.href = `/${url}`;
+        }
         anchor.innerText = 'Link ' + idx;
         li.append(anchor);
         ul.append(li);

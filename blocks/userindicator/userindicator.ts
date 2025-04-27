@@ -8,19 +8,25 @@ function decorate(block: Element) {
   if (conts.length === 0) {
     block.append(container)
     container.append(userImg, userName)
-    console.log(block.className)
   }
 
   // Add child element into container
   const el = document.querySelectorAll('.userindicator')
   const nav = document.createElement('nav')
-  const ul = document.createElement('ul')
   // Nav links
-  ;[1, 2, 3, 4].forEach((item, idx) => {
+  const ul = document.createElement('ul')
+  const links = ['/', 'about', 'contact', 'profile']
+  links.forEach((url, idx) => {
     const li = document.createElement('li')
     const anchor = document.createElement('a')
-    anchor.href = '/'
-    anchor.innerText = 'Link ' + idx
+
+    if (idx === 0) {
+      anchor.href = '/'
+    } else {
+      anchor.href = `/${url}`
+    }
+
+    anchor.innerText = `Link ${idx}`
     li.append(anchor)
     ul.append(li)
   })
@@ -28,7 +34,6 @@ function decorate(block: Element) {
   nav.classList.add('nav')
   nav.append(ul)
   const navs = el[0].querySelectorAll('.nav')
-  const navs1 = el[1].querySelectorAll('.nav')
 
   // // Code was executed 4 times???
   if (navs.length === 0) {
