@@ -33,6 +33,13 @@ npm run lint
 [Gulp](https://gulpjs.com/) is use to compile `.scss` to `.css`, through various postcss plugins to support older browser and automate conversion of px value to rem. Tsx is use to compile `.ts` to `.js`.
 Only make changes in `.ts` and `.scss` files for development.
 
+### Block development
+
+- Block's name needs to be all lowercase
+- In Block's `.json` file, definitions id, models id and filters id needs to be the same name and lowercase. The exception of definitions title and definition plugins name
+
+### Updating content source
+
 1. Add a mountpoint in the `fstab.yaml`
 2. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
 3. Open the `{repo}` directory in your favorite IDE and start coding
