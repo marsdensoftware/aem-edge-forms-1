@@ -8,15 +8,15 @@ module.exports = {
   env: {
     browser: true,
   },
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     allowImportExportEverywhere: true,
     sourceType: 'module',
     requireConfigFile: false,
   },
   rules: {
-    // semi: [2, 'never'],
-    // quotes: [2, 'single'],
+    semi: [2, 'never'],
+    quotes: [2, 'single'],
     'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
     'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
     'no-param-reassign': [2, { props: false }], // allow modifying properties of param
@@ -62,4 +62,4 @@ module.exports = {
     ],
     'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
   },
-};
+}
