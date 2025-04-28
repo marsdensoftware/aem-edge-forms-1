@@ -2,13 +2,13 @@
 
 ## Environments
 
-- Live: https://main--aem-edge-forms-1--marsdensoftware.aem.page/
-- Testing: https://dev--aem-edge-forms-1--marsdensoftware.aem.page/
+-   Live: https://main--aem-edge-forms-1--marsdensoftware.aem.page/
+-   Testing: https://dev--aem-edge-forms-1--marsdensoftware.aem.page/
 
 ## Prerequisites
 
-- Nodejs 18.3.x or newer
-- AEM Cloud Service release 2024.8 or newer (>= `17465`)
+-   Nodejs 18.3.x or newer
+-   AEM Cloud Service release 2024.8 or newer (>= `17465`)
 
 ## Installation
 
@@ -35,8 +35,9 @@ Only make changes in `.ts` and `.scss` files for development.
 
 ### Block development
 
-- Block's name needs to be all lowercase
-- In Block's `.json` file, definitions id, models id and filters id needs to be the same name and lowercase. The exception of definitions title and definition plugins name
+-   Block's name needs to be all lowercase
+-   In Block's `.json` file, definitions id, models id and filters id needs to be the same name and lowercase. The exception of definitions title and definition plugins name
+-   Block needs to be added to the `models` that will use the block
 
 ### Updating content source
 
@@ -48,11 +49,11 @@ Only make changes in `.ts` and `.scss` files for development.
 
 Before using the aem-boilerplate, we recommand you to go through the documentation on [www.aem.live](https://www.aem.live/docs/) and [experienceleague.adobe.com](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring), more specifically:
 
-- [Getting Started Guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started)
-- [Creating Blocks](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)
-- [Content Modelling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling)
-- [Working with Tabular Data / Spreadsheets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/tabular-data)
+-   [Getting Started Guide](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/edge-dev-getting-started)
+-   [Creating Blocks](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)
+-   [Content Modelling](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/content-modeling)
+-   [Working with Tabular Data / Spreadsheets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/tabular-data)
 
 Furthremore, we encourage you to watch the recordings of any of our previous presentations or sessions:
 
-- [Getting started with AEM Forms Authoring and Edge Delivery Services](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/edge-delivery-for-aem-forms)
+-   [Getting started with AEM Forms Authoring and Edge Delivery Services](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/edge-delivery-for-aem-forms)
