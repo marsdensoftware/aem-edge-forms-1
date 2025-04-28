@@ -18,6 +18,8 @@ module.exports = {
         semi: [2, 'never'],
         quotes: [2, 'single'],
         indent: ['error', 4],
+        'implicit-arrow-linebreak': ['error', 'below'],
+        devDependencies: [0, false],
         'import/extensions': ['error', { js: 'always' }], // require js file extensions in imports
         'linebreak-style': ['error', 'unix'], // enforce unix linebreaks
         'no-param-reassign': [2, { props: false }], // allow modifying properties of param
