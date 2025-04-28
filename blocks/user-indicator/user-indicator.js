@@ -8,10 +8,23 @@ function decorate(block) {
     container.classList.add('user-indicator--container');
     if (conts.length === 0) {
         block.append(container);
+        // Assigning class to use for styling
+        userImg.className = 'user-indicator-img';
+        userName.className = 'user-indicator-name';
+        (_a = userImg.querySelector('div')) === null || _a === void 0 ? void 0 : _a.classList.add('user-indicator-picture');
+        (_b = userName.querySelector('div')) === null || _b === void 0 ? void 0 : _b.classList.add('user-indicator-username');
+        // Create a custom elements
+        const indicator = document.createElement('div');
+        indicator.className = 'user-indicator-indicator';
+        const indicatorInner = document.createElement('div');
+        indicatorInner.className = 'user-indicator-indicator-inner';
+        // Added to the parent element
+        indicatorInner.append(indicator);
+        userImg.append(indicatorInner);
         container.append(userImg, userName);
     }
     // Add child element into container
-    const el = document.querySelectorAll('.userindicator');
+    const el = document.querySelectorAll('.user-indicator');
     const nav = document.createElement('nav');
     // Nav links
     const ul = document.createElement('ul');
@@ -37,19 +50,6 @@ function decorate(block) {
         el[0].prepend(nav);
     }
     // Logout state
-    el[1].classList.add('userindicator--is-not-loggedin');
-    // Assigning class to use for styling
-    userImg.className = 'user-indicator-img';
-    userName.className = 'user-indicator-name';
-    (_a = userImg.querySelector('div')) === null || _a === void 0 ? void 0 : _a.classList.add('user-indicator-picture');
-    (_b = userName.querySelector('div')) === null || _b === void 0 ? void 0 : _b.classList.add('user-indicator-username');
-    // Create a custom elements
-    const indicator = document.createElement('div');
-    indicator.className = 'user-indicator-indicator';
-    const indicatorInner = document.createElement('div');
-    indicatorInner.className = 'user-indicator-indicator-inner';
-    // Added to the parent element
-    indicatorInner.append(indicator);
-    userImg.append(indicatorInner);
+    el[1].classList.add('user-indicator--is-not-loggedin');
 }
 export default decorate;

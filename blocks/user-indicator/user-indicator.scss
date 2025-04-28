@@ -1,0 +1,124 @@
+// TODO: organise better variables for references
+:root {
+    --user-size: 80px;
+    --indicator-size: 10px;
+}
+
+.block {
+    &.user-indicator {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .user-indicator--container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .user-indicator-img {
+            order: 1;
+            position: relative;
+        }
+
+        .user-indicator-picture {
+            display: block;
+            cursor: pointer;
+            border: 1px solid #00000014;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .user-indicator-indicator-inner {
+            background-color: #fff;
+            bottom: 5px;
+            left: 10px;
+            position: absolute;
+            border-radius: 50%;
+            width: var(--indicator-size);
+            height: var(--indicator-size);
+            padding: 3px;
+        }
+
+        .user-indicator-indicator {
+            display: block;
+            background-color: #17b26a;
+            border-radius: 50%;
+            position: relative;
+            width: var(--indicator-size);
+            height: var(--indicator-size);
+        }
+
+        .user-indicator-picture {
+            picture {
+                border-radius: 50%;
+                overflow: hidden;
+                display: block;
+                width: var(--user-size);
+                height: var(--user-size);
+            }
+        }
+
+        .user-indicator-name {
+            order: 0;
+            margin-right: 9px;
+            display: none;
+
+            p {
+                margin: 0;
+            }
+
+            @media (width >= 768px) {
+                display: block;
+            }
+        }
+
+        &.user-indicator--is-not-loggedin {
+            margin-top: 60px;
+
+            .user-indicator-img {
+                display: none;
+            }
+
+            .user-indicator-name {
+                background-color: #017ac9;
+                color: #fff;
+                padding: 16px 32px;
+                border-radius: 999px;
+                cursor: pointer;
+                /* Elevation-2 */
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+
+                &:hover {
+                    transition: all 0.5 ease-in-out;
+                    background: linear-gradient(
+                        135deg,
+                        #017ac9 25%,
+                        #134276 100%
+                    );
+                    /* Elevation-3 */
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                }
+
+                &:active {
+                    transition: all 0.5 ease-in-out;
+                    background: #134276;
+                }
+            }
+        }
+
+        .nav {
+            width: 300px;
+
+            ul {
+                padding-left: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+            }
+        }
+    }
+}

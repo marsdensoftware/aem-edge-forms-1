@@ -7,11 +7,27 @@ function decorate(block: Element) {
     container.classList.add('user-indicator--container')
     if (conts.length === 0) {
         block.append(container)
+        // Assigning class to use for styling
+        userImg.className = 'user-indicator-img'
+        userName.className = 'user-indicator-name'
+        userImg.querySelector('div')?.classList.add('user-indicator-picture')
+        userName.querySelector('div')?.classList.add('user-indicator-username')
+
+        // Create a custom elements
+        const indicator = document.createElement('div')
+        indicator.className = 'user-indicator-indicator'
+        const indicatorInner = document.createElement('div')
+        indicatorInner.className = 'user-indicator-indicator-inner'
+
+        // Added to the parent element
+        indicatorInner.append(indicator)
+        userImg.append(indicatorInner)
+
         container.append(userImg, userName)
     }
 
     // Add child element into container
-    const el = document.querySelectorAll('.userindicator')
+    const el = document.querySelectorAll('.user-indicator')
     const nav = document.createElement('nav')
     // Nav links
     const ul = document.createElement('ul')
@@ -41,21 +57,7 @@ function decorate(block: Element) {
     }
 
     // Logout state
-    el[1].classList.add('userindicator--is-not-loggedin')
-
-    // Assigning class to use for styling
-    userImg.className = 'user-indicator-img'
-    userName.className = 'user-indicator-name'
-    userImg.querySelector('div')?.classList.add('user-indicator-picture')
-    userName.querySelector('div')?.classList.add('user-indicator-username')
-    // Create a custom elements
-    const indicator = document.createElement('div')
-    indicator.className = 'user-indicator-indicator'
-    const indicatorInner = document.createElement('div')
-    indicatorInner.className = 'user-indicator-indicator-inner'
-    // Added to the parent element
-    indicatorInner.append(indicator)
-    userImg.append(indicatorInner)
+    el[1].classList.add('user-indicator--is-not-loggedin')
 }
 
 export default decorate

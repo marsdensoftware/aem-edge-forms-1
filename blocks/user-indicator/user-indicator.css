@@ -3,29 +3,29 @@
   --indicator-size: 0.625rem;
 }
 
-.block.userindicator {
+.block.user-indicator {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.block.userindicator .user-indicator--container {
+.block.user-indicator .user-indicator--container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.block.userindicator .user-indicator-img {
+.block.user-indicator .user-indicator-img {
   order: 1;
   position: relative;
 }
-.block.userindicator .user-indicator-picture {
+.block.user-indicator .user-indicator-picture {
   display: block;
   cursor: pointer;
   border: 1px solid rgba(0, 0, 0, 0.0784313725);
   padding: 0.3125rem;
   border-radius: 50%;
 }
-.block.userindicator .user-indicator-indicator-inner {
+.block.user-indicator .user-indicator-indicator-inner {
   background-color: #fff;
   bottom: 0.3125rem;
   left: 0.625rem;
@@ -35,7 +35,7 @@
   height: var(--indicator-size);
   padding: 0.1875rem;
 }
-.block.userindicator .user-indicator-indicator {
+.block.user-indicator .user-indicator-indicator {
   display: block;
   background-color: #17b26a;
   border-radius: 50%;
@@ -43,33 +43,33 @@
   width: var(--indicator-size);
   height: var(--indicator-size);
 }
-.block.userindicator .user-indicator-picture picture {
+.block.user-indicator .user-indicator-picture picture {
   border-radius: 50%;
   overflow: hidden;
   display: block;
   width: var(--user-size);
   height: var(--user-size);
 }
-.block.userindicator .user-indicator-name {
+.block.user-indicator .user-indicator-name {
   order: 0;
   margin-right: 0.5625rem;
   display: none;
 }
-.block.userindicator .user-indicator-name p {
+.block.user-indicator .user-indicator-name p {
   margin: 0;
 }
 @media (width >= 768px) {
-  .block.userindicator .user-indicator-name {
+  .block.user-indicator .user-indicator-name {
     display: block;
   }
 }
-.block.userindicator.userindicator--is-not-loggedin {
+.block.user-indicator.user-indicator--is-not-loggedin {
   margin-top: 3.75rem;
 }
-.block.userindicator.userindicator--is-not-loggedin .user-indicator-img {
+.block.user-indicator.user-indicator--is-not-loggedin .user-indicator-img {
   display: none;
 }
-.block.userindicator.userindicator--is-not-loggedin .user-indicator-name {
+.block.user-indicator.user-indicator--is-not-loggedin .user-indicator-name {
   background-color: #017ac9;
   color: #fff;
   padding: 1rem 2rem;
@@ -78,20 +78,20 @@
   /* Elevation-2 */
   box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
-.block.userindicator.userindicator--is-not-loggedin .user-indicator-name:hover {
+.block.user-indicator.user-indicator--is-not-loggedin .user-indicator-name:hover {
   transition: all 0.5 ease-in-out;
   background: linear-gradient(135deg, #017ac9 25%, #134276 100%);
   /* Elevation-3 */
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
 }
-.block.userindicator.userindicator--is-not-loggedin .user-indicator-name:active {
+.block.user-indicator.user-indicator--is-not-loggedin .user-indicator-name:active {
   transition: all 0.5 ease-in-out;
   background: #134276;
 }
-.block.userindicator .nav {
+.block.user-indicator .nav {
   width: 18.75rem;
 }
-.block.userindicator .nav ul {
+.block.user-indicator .nav ul {
   padding-left: 0;
   margin: 0;
   display: flex;
