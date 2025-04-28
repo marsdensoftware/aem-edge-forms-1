@@ -5022,6 +5022,32 @@
     ]
   },
   {
+    "id": "senoform",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Logo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Logo alt text",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "senoformText_title",
+        "label": "User name",
+        "required": true
+      }
+    ]
+  },
+  {
     "id": "userindicator",
     "fields": [
       {

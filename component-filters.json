@@ -18,7 +18,8 @@
       "fragment",
       "form",
       "embed-adaptive-form",
-      "userindicator"
+      "userindicator",
+      "senoform"
     ]
   },
   {
@@ -70,6 +71,10 @@
       "tnc",
       "wizard"
     ]
+  },
+  {
+    "id": "senoform",
+    "components": null
   },
   {
     "id": "userindicator",
