@@ -35,9 +35,11 @@ Only make changes in `.ts` and `.scss` files for development.
 
 ### Block development
 
+When developing Block keep this thing in mind:
+
 -   Block's name needs to be all lowercase
 -   In Block's `.json` file, definitions id, models id and filters id needs to be the same name and lowercase. The exception of definitions title and definition plugins name
--   Block needs to be added to the `models` that will use the block
+-   Block needs to be added to one or more `models` inside the models folder that will use the newly created Block
 
 ### Updating content source
 
