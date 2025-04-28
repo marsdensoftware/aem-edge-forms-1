@@ -28,17 +28,18 @@ function decorate(block) {
     const nav = document.createElement('nav');
     // Nav links
     const ul = document.createElement('ul');
-    const links = ['/', 'about', 'contact', 'profile'];
+    const links = ['/', 'About', 'Contact', 'Profile'];
     links.forEach((url, idx) => {
         const li = document.createElement('li');
         const anchor = document.createElement('a');
         if (idx === 0) {
             anchor.href = '/';
+            anchor.innerText = 'Home';
         }
         else {
-            anchor.href = `/${url}`;
+            anchor.href = `/${url}`.toLowerCase();
+            anchor.innerText = `${url}`;
         }
-        anchor.innerText = `Link ${idx}`;
         li.append(anchor);
         ul.append(li);
     });

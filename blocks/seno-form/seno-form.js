@@ -13,11 +13,22 @@ function decorate(block) {
     button2.innerText = 'Blue';
     button1.addEventListener('click', () => {
         window.localStorage.setItem('theme', 'Red');
+        window.location.reload();
     });
     button2.addEventListener('click', () => {
         window.localStorage.setItem('theme', 'Blue');
+        window.location.reload();
     });
-    innerContainer.append(pickedColour, button1, button2);
+    const deleteBtn = document.createElement('button');
+    deleteBtn.innerText = 'Delete';
+    deleteBtn.addEventListener('click', () => {
+        const theme = window.localStorage.getItem('theme');
+        if (!theme)
+            return;
+        window.localStorage.removeItem('theme');
+        window.location.reload();
+    });
+    innerContainer.append(pickedColour, button1, button2, deleteBtn);
     block.append(innerContainer);
 }
 export default decorate;
