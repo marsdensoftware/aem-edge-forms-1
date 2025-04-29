@@ -1,7 +1,26 @@
+%cursor-pointer {
+    cursor: pointer;
+}
+
 .block {
     &.seno-form {
         .seno-form__inner {
             display: block;
+        }
+
+        .seno-form__radio1,
+        .seno-form__radio2,
+        .seno-form__label1,
+        .seno-form__label2 {
+            @extend %cursor-pointer;
+        }
+
+        .seno-form__label1 {
+            color: red;
+        }
+
+        .seno-form__label2 {
+            color: blue;
         }
     }
 }

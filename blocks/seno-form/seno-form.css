@@ -1,3 +1,16 @@
+.block.seno-form .seno-form__radio1,
+.block.seno-form .seno-form__radio2,
+.block.seno-form .seno-form__label1,
+.block.seno-form .seno-form__label2 {
+  cursor: pointer;
+}
+
 .block.seno-form .seno-form__inner {
   display: block;
+}
+.block.seno-form .seno-form__label1 {
+  color: red;
+}
+.block.seno-form .seno-form__label2 {
+  color: blue;
 }
