@@ -80,17 +80,6 @@ function decorate(block: Element) {
     // Get URL
     const url = new URL(window.location.href)
 
-    // if (window.onload) {
-    // document.onload = () => {
-    //     if (getLocalTheme()) {
-    //         // Set search param
-    //         url.searchParams.set('theme', `${getLocalTheme()}`)
-    //         // Added in history
-    //         window.history.pushState({}, '', url.href)
-    //     }
-    // }
-    // }
-
     form.addEventListener('change', () => {
         // Get value from form
         const radio = form.elements
@@ -102,7 +91,6 @@ function decorate(block: Element) {
         window.history.pushState({}, '', url.href)
         // Set in localstorage
         window.localStorage.setItem('theme', value)
-        console.log(getLocalTheme())
     })
 
     innerContainer.append(

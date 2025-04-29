@@ -69,14 +69,15 @@ function decorate(block) {
     // Get URL
     const url = new URL(window.location.href);
     // if (window.onload) {
-    // document.onload = () => {
-    //     if (getLocalTheme()) {
-    //         // Set search param
-    //         url.searchParams.set('theme', `${getLocalTheme()}`)
-    //         // Added in history
-    //         window.history.pushState({}, '', url.href)
-    //     }
-    // }
+    document.onload = () => {
+        console.log('load');
+        // if (getLocalTheme()) {
+        //     // Set search param
+        //     url.searchParams.set('theme', `${getLocalTheme()}`)
+        //     // Added in history
+        //     window.history.pushState({}, '', url.href)
+        // }
+    };
     // }
     form.addEventListener('change', () => {
         // Get value from form
