@@ -14,15 +14,21 @@ function decorate(block) {
         // load nav as fragment
         const navMeta = getMetadata('nav');
         const navPath = navMeta
-            ? new URL(navMeta, window.location).pathname
+            ? new URL(navMeta, window.location.href).pathname
             : '/nav';
         const fragment = yield loadFragment(navPath);
         block.textContent = '';
         const nav = document.createElement('nav');
         nav.id = 'nav';
+        nav.className = 'nav';
+        // Fragment.firstElementChild is <main> element
         while (fragment.firstElementChild) {
             nav.append(fragment.firstElementChild);
         }
+        const paras = nav.querySelectorAll('div.section .default-content-wrapper p');
+        paras.forEach((item, idx) => {
+            item.outerHTML = `<div class="${idx === 0 ? 'nav__logo' : 'nav__action'}">${item.innerHTML}</div>`;
+        });
         block.append(nav);
     });
 }

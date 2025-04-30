@@ -1,0 +1,13 @@
+.nav {
+    .default-content-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .nav__action {
+        a {
+            margin: 0;
+        }
+    }
+}
