@@ -19,7 +19,8 @@
       "form",
       "embed-adaptive-form",
       "userindicator",
-      "senoform"
+      "senoform",
+      "jobseekerintro"
     ]
   },
   {
@@ -71,6 +72,10 @@
       "tnc",
       "wizard"
     ]
+  },
+  {
+    "id": "jobseekerintro",
+    "components": null
   },
   {
     "id": "senoform",
