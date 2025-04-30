@@ -15,12 +15,13 @@ async function decorate(block: Element) {
     nav.className = 'nav'
 
     // Fragment.firstElementChild is <main> element
-    while (fragment.firstElementChild) {
+    while (fragment?.firstElementChild) {
         nav.append(fragment.firstElementChild)
     }
 
     const paras = nav.querySelectorAll('div.section .default-content-wrapper p')
 
+    // Top nav
     paras.forEach((item, idx) => {
         item.outerHTML = `<div class="${
             idx === 0 ? 'nav__logo' : 'nav__action'

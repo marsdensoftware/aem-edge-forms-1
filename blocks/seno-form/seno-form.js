@@ -68,17 +68,6 @@ function decorate(block) {
     form.append(radioOpt1Label, radioOpt1, radioOpt2Label, radioOpt2);
     // Get URL
     const url = new URL(window.location.href);
-    // if (window.onload) {
-    document.onload = () => {
-        console.log('load');
-        // if (getLocalTheme()) {
-        //     // Set search param
-        //     url.searchParams.set('theme', `${getLocalTheme()}`)
-        //     // Added in history
-        //     window.history.pushState({}, '', url.href)
-        // }
-    };
-    // }
     form.addEventListener('change', () => {
         // Get value from form
         const radio = form.elements;
@@ -89,7 +78,6 @@ function decorate(block) {
         window.history.pushState({}, '', url.href);
         // Set in localstorage
         window.localStorage.setItem('theme', value);
-        console.log(getLocalTheme());
     });
     innerContainer.append(title, pickedColour, button1, button2, deleteBtn, title2, form);
     block.append(innerContainer);
