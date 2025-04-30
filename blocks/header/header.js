@@ -1,3 +1,6 @@
+import { getMetadata } from '../../scripts/aem.js'
+import { loadFragment } from '../fragment/fragment.js'
+
 export default async function decorate(block) {
     // load nav as fragment
     const navMeta = getMetadata('nav')
