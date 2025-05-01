@@ -1,11 +1,11 @@
 @use '../abstract' as *;
 /* Base text styles */
 body {
-    font-family: var(--font-family);
-    font-size: var(--base-font-size);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-text);
-    color: var(--text-color);
+    font-family: $font-family;
+    font-size: $base-font-size;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-text;
+    color: $text-color;
 }
 
 /* Headings */
@@ -15,31 +15,31 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--font-family);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-heading);
-    letter-spacing: var(--letter-spacing);
-    color: var(--text-color);
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-heading;
+    letter-spacing: $letter-spacing;
+    color: $text-color;
     margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: var(--h1-size);
+    font-size: $h1-size;
 }
 h2 {
-    font-size: var(--h2-size);
+    font-size: $h2-size;
 }
 h3 {
-    font-size: var(--h3-size);
+    font-size: $h3-size;
 }
 h4 {
-    font-size: var(--h4-size);
+    font-size: $h4-size;
 }
 h5 {
-    font-size: var(--h5-size);
+    font-size: $h5-size;
 }
 h6 {
-    font-size: var(--h6-size);
+    font-size: $h6-size;
 }
 
 ul {
@@ -49,4 +49,8 @@ ul {
 
 picture {
     display: block;
+}
+
+p {
+    @include paragraph;
 }

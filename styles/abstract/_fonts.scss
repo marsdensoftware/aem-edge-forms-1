@@ -39,6 +39,18 @@ $text-color: var(--text-primary);
     }
 
     @include media('desktop') {
-        font-size: $h3-size-desktop;
+        font-size: $h1-size;
+    }
+}
+
+@mixin paragraph {
+    font-size: $paragraph-small;
+
+    @include media('tablet') {
+        font-size: $paragraph-default;
+    }
+
+    @include media('desktop') {
+        font-size: $paragraph-large;
     }
 }

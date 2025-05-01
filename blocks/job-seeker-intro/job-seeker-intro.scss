@@ -2,10 +2,44 @@
 
 .block {
     &.job-seeker-intro {
+        min-height: 400px;
+
+        @include media('tablet-large') {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 120px 0;
+            max-width: 930px;
+            margin: 0 auto;
+        }
+
         .job-seeker-intro__picture {
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-shrink: 0;
+            width: 100%;
+            max-width: 160px;
+            margin: 0 auto;
+
+            @include media('tablet-large') {
+                order: 2;
+                max-width: 240px;
+            }
+
+            .job-seeker-intro__inner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                width: 100%;
+            }
+
+            .job-seeker-intro__inner,
+            picture,
+            img {
+                width: 100%;
+            }
         }
 
         .job-seeker-intro__content-inner {
@@ -13,6 +47,13 @@
 
             h2 {
                 @include heading-level-3;
+            }
+
+            @include media('tablet-large') {
+                text-align: left;
+                order: 1;
+                width: 510px;
+                margin-right: 60px;
             }
         }
     }
