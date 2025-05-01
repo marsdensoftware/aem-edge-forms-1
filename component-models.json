@@ -5042,7 +5042,14 @@
         "component": "text",
         "valueType": "string",
         "name": "userIndicatorText_title",
-        "label": "User name",
+        "label": "Title",
+        "required": true
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "userIndicatorText_description",
+        "label": "Description",
         "required": true
       }
     ]

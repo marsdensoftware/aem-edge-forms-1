@@ -1,0 +1,10 @@
+.block {
+    &.job-seeker-intro {
+        .job-seeker-intro__picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // .job-seeker-intro__inner {}
+        }
+    }
+}
