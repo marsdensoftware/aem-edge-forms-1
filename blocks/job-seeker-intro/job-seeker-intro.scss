@@ -1,10 +1,19 @@
+@use '../../styles/abstract' as *;
+
 .block {
     &.job-seeker-intro {
         .job-seeker-intro__picture {
             display: flex;
             align-items: center;
             justify-content: center;
-            // .job-seeker-intro__inner {}
+        }
+
+        .job-seeker-intro__content-inner {
+            text-align: center;
+
+            h2 {
+                font-size: $h3-size;
+            }
         }
     }
 }

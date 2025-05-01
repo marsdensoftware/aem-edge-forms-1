@@ -1,3 +1,54 @@
+/* Headings */
+/* Text */
+/* Base text styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--base-font-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-text);
+  color: var(--text-color);
+  margin: 2rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-size: var(--h5-size);
+}
+
+h6 {
+  font-size: var(--h6-size);
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -5,4 +56,37 @@ ul {
 
 picture {
   display: block;
+}
+
+/*
+ * typography.css
+ * Base font styles and weights
+ */
+/* Supporting Text */
+.subtitle {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  font-size: var(--subtitle-size);
+  line-height: var(--line-height-text);
+  margin-bottom: 1rem;
+}
+
+.strap-title {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  font-size: var(--strap-title-size);
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Variants */
+.p-large {
+  font-size: var(--paragraph-large);
+  font-weight: var(--font-weight-regular);
+}
+
+.p-small {
+  font-size: var(--paragraph-small);
+  font-weight: var(--font-weight-regular);
 }

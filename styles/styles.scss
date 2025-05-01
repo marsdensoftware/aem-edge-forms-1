@@ -1,44 +1,30 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
-
 :root {
-    /* colors */
-    --background-color: white;
-    --light-color: #f8f8f8;
-    --dark-color: #505050;
-    --text-color: #131313;
-    --link-color: #3b63fb;
-    --link-hover-color: #1d3ecf;
+    --font-family: 'Atkinson Hyperlegible Next', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --base-font-size: 16px;
 
-    /* fonts */
-    --body-font-family: roboto, roboto-fallback, sans-serif;
-    --heading-font-family: roboto-condensed, roboto-condensed-fallback,
-        sans-serif;
+    /* Headings */
+    --h1-size: clamp(48px, 5.2vw, 61px);
+    --h2-size: clamp(38px, 4vw, 48px);
+    --h3-size: clamp(32px, 3.5vw, 40px);
+    --h4-size: clamp(24px, 2.5vw, 32px);
+    --h5-size: clamp(22px, 2vw, 24px);
+    --h6-size: 20px;
 
-    /* body sizes */
-    --body-font-size-m: 22px;
-    --body-font-size-s: 19px;
-    --body-font-size-xs: 17px;
+    /* Text */
+    --subtitle-size: 28px;
+    --strap-title-size: 20px;
+    --paragraph-large: clamp(18px, 1.5vw, 20px);
+    --paragraph-default: 16px;
+    --paragraph-small: 12px;
 
-    /* heading sizes */
-    --heading-font-size-xxl: 55px;
-    --heading-font-size-xl: 44px;
-    --heading-font-size-l: 34px;
-    --heading-font-size-m: 27px;
-    --heading-font-size-s: 24px;
-    --heading-font-size-xs: 22px;
-
-    /* nav height */
-    --nav-height: 64px;
+    --line-height-heading: 1.2;
+    --line-height-text: 1.5;
+    --letter-spacing: 0;
+    --text-color: var(--text-primary);
 }
 
 /* fallback fonts */
@@ -76,7 +62,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: var(--body-font-family);
+    font-family: var(--font-family);
     font-size: var(--body-font-size-m);
     line-height: 1.6;
 }

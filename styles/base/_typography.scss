@@ -1,0 +1,33 @@
+/*
+ * typography.css
+ * Base font styles and weights
+ */
+
+/* Supporting Text */
+.subtitle {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-light);
+    font-size: var(--subtitle-size);
+    line-height: var(--line-height-text);
+    margin-bottom: 1rem;
+}
+
+.strap-title {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-light);
+    font-size: var(--strap-title-size);
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph Variants */
+.p-large {
+    font-size: var(--paragraph-large);
+    font-weight: var(--font-weight-regular);
+}
+
+.p-small {
+    font-size: var(--paragraph-small);
+    font-weight: var(--font-weight-regular);
+}

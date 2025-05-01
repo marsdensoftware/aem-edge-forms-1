@@ -1,5 +1,13 @@
+/* Headings */
+/* Text */
 .block.job-seeker-intro .job-seeker-intro__picture {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.block.job-seeker-intro .job-seeker-intro__content-inner {
+  text-align: center;
+}
+.block.job-seeker-intro .job-seeker-intro__content-inner h2 {
+  font-size: clamp(2rem, 3.5vw, 2.5rem);
 }
