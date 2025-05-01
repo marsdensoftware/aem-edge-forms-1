@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   width: 100%;
   max-width: 10rem;
   margin: 0 auto;
@@ -32,7 +31,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   width: 100%;
 }
 .block.job-seeker-intro .job-seeker-intro__picture .job-seeker-intro__inner,
