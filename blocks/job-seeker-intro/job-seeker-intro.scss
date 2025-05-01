@@ -12,7 +12,7 @@
             text-align: center;
 
             h2 {
-                font-size: $h3-size;
+                @include heading-level-3;
             }
         }
     }

@@ -9,5 +9,15 @@
   text-align: center;
 }
 .block.job-seeker-intro .job-seeker-intro__content-inner h2 {
-  font-size: clamp(2rem, 3.5vw, 2.5rem);
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .block.job-seeker-intro .job-seeker-intro__content-inner h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .block.job-seeker-intro .job-seeker-intro__content-inner h2 {
+    font-size: 2.625rem;
+  }
 }
