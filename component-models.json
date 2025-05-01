@@ -5041,14 +5041,14 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "userIndicatorText_title",
+        "name": "jobseekerintroText_title",
         "label": "Title",
         "required": true
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "userIndicatorText_description",
+        "name": "jobseekerintroText_description",
         "label": "Description",
         "required": true
       }
